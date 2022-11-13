@@ -1,0 +1,96 @@
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navLogoPC{
+  width: 250px;
+}
+
+.navbarPC{
+  display: block;
+  visibility: visible;
+}
+
+.mediaQueryNavbar{
+  display: none;
+  visibility: hidden;
+}
+
+.container00{
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  header{
+    a{
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+}
+
+.titlePadding{
+  padding-top: 200px;
+}
+
+.arrowDown{
+  width: 90px;
+}
+
+.btnLearnMore-Explore{
+  font-size: 15px;
+}
+
+.contactDiv{
+  height: 80vh;
+  padding-top: 15%;
+  font-size: 17px;
+
+  a{
+    font-size: 20px;
+  }
+
+  .obcLink{
+    color: $color-hover-links;
+    &:hover{
+      color: white;
+    }
+    &:link{
+      text-decoration: none;
+    }
+  }
+}
+
+.footter{
+  font-size: 13px;
+
+  .copyright{
+    color: $color-copyright-obc-footer;
+  }
+
+  a{
+    color: white;
+    &:hover{
+      color: $color-hover-links;
+    }
+    &:link{
+      text-decoration: none;
+    }
+  }
+}
+
+
+@media (max-width: 990px){
+  .navbarPC{
+    display: none;
+    visibility: hidden;
+  }
+  
+  .mediaQueryNavbar{
+    display: block;
+    visibility: visible;
+  }
+}
